@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Times New Roman", serif;
+    font-size:20px;
+}
+
+body{
+    background-color:#001f54;
+    color:white;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+#month-year{
+    color:grey;
+    font-size:32px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.weather-card{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.calendar{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:10px;
+}
+
+.days,
+.dates{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:10px;
+}
+
+.days div{
+    text-align:center;
+    font-weight:bold;
+}
+
+.dates div{
+    text-align:center;
+    padding:15px;
+    border-radius:8px;
+    background:rgba(255,255,255,0.15);
+}
+
+.today{
+    background:#ff9800 !important;
+    color:white;
+    font-weight:bold;
+}
+
+/* Dark Mode */
+
+.dark-mode{
+    background:#000;
+    color:#fff;
+}
+
+.dark-mode .calendar,
+.dark-mode .weather-card{
+    background:#222;
+}
